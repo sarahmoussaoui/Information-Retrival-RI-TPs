@@ -8,17 +8,18 @@
 Ceci est un script temporaire.
 """
 
-Text = """ In 2025, Garfild the cat ate a whole plate of lasagna. """
+# LAB0
+# Text = """ In 2025, Garfild the cat ate a whole plate of lasagna. """
 
-#terms = Text.split()
-# print("extracted terms:\n",terms)
+# #terms = Text.split()
+# # print("extracted terms:\n",terms)
 
-import nltk
-from nltk.tokenize import RegexpTokenizer
+# import nltk
+# from nltk.tokenize import RegexpTokenizer
 
-ExpReg = RegexpTokenizer(r'\w+')
-terms = ExpReg.tokenize(Text)
-print(terms)
+# ExpReg = RegexpTokenizer(r'\w+')
+# terms = ExpReg.tokenize(Text)
+# print(terms)
 
 # # LAB 1
 
@@ -40,7 +41,6 @@ nltk.download('stopwords')
 # CONFIGURATION
 # ------------------------------------------------------------
 folder = "Collection"   # Folder containing D1.txt, D2.txt, etc.
-voisins = 3             # (Not used here, kept for consistency)
 stop_words = set(stopwords.words('english'))
 # Create "results" folder if it doesn’t exist
 os.makedirs("results", exist_ok=True)
@@ -66,8 +66,14 @@ def tokenize_split(text):
 
 def tokenize_regex(text):
     """Tokenization using regular expressions (keeping words and abbreviations)"""
-    tokenizer = RegexpTokenizer(r"[A-Za-z]\w+(?:[-']\w+)*|\w+\.\w+|\d+(?:\.\d+)?")
+    tokenizer = RegexpTokenizer(
+        r'(?:[A-Za-z]\.)+'            # abbreviations like U.S.A.
+        r'|(?:[A-Za-z]+[\-@]\d+(?:\.\d+)?)'  # words with - or @ and numbers like A-123 or A@123
+        r'|\d+(?:[.,-]\d+)*%?'        # numbers, decimals, percentages
+        r'|[A-Za-z]+'                 # regular words
+    )
     return tokenizer.tokenize(text.lower())
+
 
 # ------------------------------------------------------------
 # 3. STOPWORD REMOVAL
@@ -79,13 +85,10 @@ def remove_stopwords(tokens):
 # 4. NORMALIZATION (STEMMING)
 # ------------------------------------------------------------
 porter = PorterStemmer()
-lancaster = LancasterStemmer()
 
 def stem_porter(tokens):
     return [porter.stem(t) for t in tokens]
 
-def stem_lancaster(tokens):
-    return [lancaster.stem(t) for t in tokens]
 
 # ------------------------------------------------------------
 # 5. INDEX BUILDING (Document-term & Inverted index)
@@ -131,7 +134,11 @@ The product highlights terms that are frequent but distinctive'''
 # ------------------------------------------------------------
 # Prepare corpus for sklearn TF-IDF
 corpus = [text for text in docs.values()]
-vectorizer = TfidfVectorizer(stop_words='english')
+vectorizer = TfidfVectorizer(
+    stop_words='english',
+    tokenizer=tokenize_regex,       # use your regex tokenizer
+    token_pattern=None              # disable default token_pattern
+)
 tfidf_matrix = vectorizer.fit_transform(corpus) # computes values for every term
 terms = vectorizer.get_feature_names_out() # all unique terms
 
