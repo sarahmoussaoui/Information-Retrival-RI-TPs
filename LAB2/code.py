@@ -74,6 +74,12 @@ def tokenize_regex(text):
     )
     return tokenizer.tokenize(text.lower())
 
+def tokenize_and_stem(text):
+    tokens = tokenize_regex(text)
+    tokens = remove_stopwords(tokens)
+    stems = stem_porter(tokens)
+    return stems
+
 
 # ------------------------------------------------------------
 # 3. STOPWORD REMOVAL
@@ -136,7 +142,7 @@ The product highlights terms that are frequent but distinctive'''
 corpus = [text for text in docs.values()]
 vectorizer = TfidfVectorizer(
     stop_words='english',
-    tokenizer=tokenize_regex,       # use your regex tokenizer
+    tokenizer=tokenize_and_stem,       # use your regex tokenizer
     token_pattern=None              # disable default token_pattern
 )
 tfidf_matrix = vectorizer.fit_transform(corpus) # computes values for every term
