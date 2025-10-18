@@ -42,8 +42,7 @@ nltk.download('stopwords')
 # ------------------------------------------------------------
 folder = "Collection"   # Folder containing D1.txt, D2.txt, etc.
 stop_words = set(stopwords.words('english'))
-# Create "results" folder if it doesn’t exist
-os.makedirs("results", exist_ok=True)
+
 
 # ------------------------------------------------------------
 # 1. READ COLLECTION
@@ -115,7 +114,7 @@ for doc_name, text in docs.items():
 # ------------------------------------------------------------
 # SAVE DESCRIPTOR FILES
 # ------------------------------------------------------------
-with open("results/descriptor.txt", "w") as f:
+with open("LAB2/results/descriptor.txt", "w") as f:
     for doc, terms in doc_index.items():
         for term in terms:
             f.write(f"{doc}\t{term}\n")
@@ -123,7 +122,7 @@ with open("results/descriptor.txt", "w") as f:
 # ------------------------------------------------------------
 # SAVE INVERTED INDEX FILE
 # ------------------------------------------------------------
-with open("results/inverted_index.txt", "w") as f:
+with open("LAB2/results/inverted_index.txt", "w") as f:
     for term, docs_ in inverted_index.items():
         for doc in set(docs_):
             f.write(f"{term}\t{doc}\n")
@@ -155,14 +154,14 @@ print("\nTF-IDF matrix:\n", df_tfidf.round(3))
 # ------------------------------------------------------------
 # SAVE UPDATED DESCRIPTOR & INVERTED INDEX WITH FREQUENCY & WEIGHT
 # ------------------------------------------------------------
-with open("results/descriptor_weighted.txt", "w") as f:
+with open("LAB2/results/descriptor_weighted.txt", "w") as f:
     for i, doc in enumerate(docs.keys()):
         for j, term in enumerate(terms):
             freq = tfidf_matrix[i, j]
             if freq > 0:
                 f.write(f"{doc}\t{term}\t{freq:.3f}\t{freq:.3f}\n")
 
-with open("results/inverted_index_weighted.txt", "w") as f:
+with open("LAB2/results/inverted_index_weighted.txt", "w") as f:
     for j, term in enumerate(terms):
         for i, doc in enumerate(docs.keys()):
             freq = tfidf_matrix[i, j]

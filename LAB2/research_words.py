@@ -21,7 +21,7 @@ words_order = [
 matches = []
 
 # Read and collect lines that match the pairs
-with open("./LAB2/results/descriptor_weighted.txt", "r") as f_in:
+with open("LAB2/results/descriptor_weighted.txt", "r") as f_in:
     lines = f_in.readlines()
     for line in lines:
         parts = line.strip().split('\t')
@@ -34,7 +34,7 @@ with open("./LAB2/results/descriptor_weighted.txt", "r") as f_in:
                 break
 
 # Write results in the same custom order
-with open("./LAB2/results/research_results.txt", "w") as f_out:
+with open("LAB2/results/research_results.txt", "w") as f_out:
     for w_doc, w_term in words_order:
         for doc, term, line in matches:
             if doc == w_doc and term == w_term:
