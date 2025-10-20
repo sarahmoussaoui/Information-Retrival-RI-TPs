@@ -1,544 +1,544 @@
-D1.txt	18%	0.086
-D1.txt	24%	0.086
-D1.txt	5%	0.086
-D1.txt	9%	0.086
-D1.txt	abil	0.071
-D1.txt	align	0.086
-D1.txt	approach	0.051
-D1.txt	art	0.060
-D1.txt	base	0.038
-D1.txt	benchmark	0.051
-D1.txt	benefit	0.086
-D1.txt	better	0.173
-D1.txt	context	0.086
-D1.txt	document	0.060
-D1.txt	ensembl	0.173
-D1.txt	evalu	0.060
-D1.txt	experi	0.060
-D1.txt	exploit	0.086
-D1.txt	feedback	0.213
-D1.txt	gain	0.086
-D1.txt	gener	0.103
-D1.txt	genqrensembl	0.173
-D1.txt	genqrensemblerf	0.173
-D1.txt	help	0.086
-D1.txt	improv	0.256
-D1.txt	incorpor	0.086
-D1.txt	inher	0.086
-D1.txt	inspir	0.071
-D1.txt	instruct	0.071
-D1.txt	intent	0.071
-D1.txt	introduc	0.071
-D1.txt	investig	0.086
-D1.txt	ir	0.071
-D1.txt	keyword	0.086
-D1.txt	knowledg	0.086
-D1.txt	languag	0.038
-D1.txt	larg	0.038
-D1.txt	leverag	0.060
-D1.txt	mani	0.086
-D1.txt	map	0.086
-D1.txt	model	0.038
-D1.txt	mrr	0.071
-D1.txt	msmarco	0.086
-D1.txt	multipl	0.060
-D1.txt	ndcg@10	0.120
-D1.txt	origin	0.086
-D1.txt	paraphras	0.086
-D1.txt	passag	0.086
-D1.txt	perform	0.060
-D1.txt	post	0.086
-D1.txt	previou	0.060
-D1.txt	promis	0.071
-D1.txt	prompt	0.089
-D1.txt	propos	0.044
-D1.txt	pseudo	0.173
-D1.txt	qr	0.173
-D1.txt	queri	0.154
-D1.txt	rank	0.071
-D1.txt	recent	0.051
-D1.txt	reformul	0.213
-D1.txt	rel	0.173
-D1.txt	relev	0.259
-D1.txt	retriev	0.142
-D1.txt	search	0.120
-D1.txt	set	0.120
-D1.txt	shot	0.213
-D1.txt	shown	0.086
-D1.txt	state	0.060
-D1.txt	strategi	0.051
-D1.txt	success	0.071
-D1.txt	task	0.089
-D1.txt	techniqu	0.103
-D1.txt	text	0.060
-D1.txt	transform	0.086
-D1.txt	ultim	0.086
-D1.txt	upto	0.086
-D1.txt	use	0.133
-D1.txt	user	0.103
-D1.txt	variant	0.071
-D1.txt	zero	0.259
-D2.txt	10%	0.143
-D2.txt	175	0.071
-D2.txt	2	0.071
-D2.txt	20	0.071
-D2.txt	2019	0.071
-D2.txt	2020	0.071
-D2.txt	4.2%	0.071
-D2.txt	50	0.071
-D2.txt	achiev	0.099
-D2.txt	analyz	0.071
-D2.txt	approach	0.042
-D2.txt	argu	0.071
-D2.txt	art	0.049
-D2.txt	averag	0.071
-D2.txt	b	0.143
-D2.txt	base	0.127
-D2.txt	baselin	0.143
-D2.txt	beir	0.059
-D2.txt	benchmark	0.085
-D2.txt	best	0.071
-D2.txt	blackbox	0.143
-D2.txt	burden	0.071
-D2.txt	candid	0.071
-D2.txt	challeng	0.071
-D2.txt	chatgpt	0.071
-D2.txt	commerci	0.143
-D2.txt	competit	0.071
-D2.txt	complex	0.059
-D2.txt	dataset	0.042
-D2.txt	difficult	0.071
-D2.txt	directli	0.071
-D2.txt	dl	0.071
-D2.txt	document	0.099
-D2.txt	effici	0.059
-D2.txt	estim	0.071
-D2.txt	exist	0.071
-D2.txt	favor	0.071
-D2.txt	feed	0.071
-D2.txt	fine	0.049
-D2.txt	flan	0.071
-D2.txt	formul	0.071
-D2.txt	fulli	0.071
-D2.txt	furthermor	0.059
-D2.txt	gpt-4	0.071
-D2.txt	howev	0.071
-D2.txt	improv	0.042
-D2.txt	instructgpt	0.071
-D2.txt	languag	0.032
-D2.txt	larg	0.032
-D2.txt	linear	0.071
-D2.txt	listwis	0.071
-D2.txt	literatur	0.143
-D2.txt	llm	0.220
-D2.txt	method	0.059
-D2.txt	metric	0.059
-D2.txt	model	0.095
-D2.txt	moder	0.071
-D2.txt	ndcg@10	0.049
-D2.txt	new	0.071
-D2.txt	open	0.059
-D2.txt	outperform	0.286
-D2.txt	pairwis	0.071
-D2.txt	paper	0.042
-D2.txt	paramet	0.143
-D2.txt	perform	0.099
-D2.txt	pointwis	0.143
-D2.txt	possibl	0.071
-D2.txt	practic	0.071
-D2.txt	previou	0.049
-D2.txt	problem	0.049
-D2.txt	prompt	0.147
-D2.txt	propos	0.073
-D2.txt	prp	0.286
-D2.txt	queri	0.042
-D2.txt	rank	0.352
-D2.txt	ranker	0.059
-D2.txt	reduc	0.059
-D2.txt	research	0.059
-D2.txt	result	0.085
-D2.txt	seven	0.071
-D2.txt	sever	0.071
-D2.txt	shelf	0.071
-D2.txt	significantli	0.049
-D2.txt	size	0.143
-D2.txt	solut	0.214
-D2.txt	sourc	0.059
-D2.txt	standard	0.071
-D2.txt	state	0.049
-D2.txt	supervis	0.059
-D2.txt	task	0.037
-D2.txt	techniqu	0.042
-D2.txt	templat	0.059
-D2.txt	trec	0.071
-D2.txt	tune	0.059
-D2.txt	ul	0.071
-D2.txt	understand	0.049
-D2.txt	use	0.183
-D2.txt	variant	0.059
-D2.txt	x	0.071
-D3.txt	address	0.075
-D3.txt	allow	0.061
-D3.txt	approach	0.044
-D3.txt	attempt	0.075
-D3.txt	base	0.066
-D3.txt	bridg	0.122
-D3.txt	capabl	0.075
-D3.txt	commun	0.075
-D3.txt	contain	0.075
-D3.txt	continu	0.075
-D3.txt	dataset	0.044
-D3.txt	demonstr	0.052
-D3.txt	design	0.075
-D3.txt	discret	0.149
-D3.txt	distil	0.149
-D3.txt	e.g.	0.075
-D3.txt	effect	0.052
-D3.txt	effici	0.306
-D3.txt	experiment	0.075
-D3.txt	extens	0.075
-D3.txt	fine	0.052
-D3.txt	given	0.061
-D3.txt	i.e.	0.075
-D3.txt	id	0.224
-D3.txt	immedi	0.075
-D3.txt	improv	0.177
-D3.txt	infer	0.224
-D3.txt	inform	0.044
-D3.txt	input	0.052
-D3.txt	inspir	0.061
-D3.txt	item	0.122
-D3.txt	languag	0.033
-D3.txt	larg	0.033
-D3.txt	limit	0.122
-D3.txt	llm	0.153
-D3.txt	long	0.224
-D3.txt	manifest	0.075
-D3.txt	model	0.265
-D3.txt	mostli	0.075
-D3.txt	multi	0.075
-D3.txt	n	0.075
-D3.txt	need	0.061
-D3.txt	noisi	0.075
-D3.txt	plain	0.075
-D3.txt	pod	0.075
-D3.txt	power	0.052
-D3.txt	problem	0.052
-D3.txt	process	0.044
-D3.txt	prompt	0.153
-D3.txt	propos	0.038
-D3.txt	real	0.075
-D3.txt	reason	0.075
-D3.txt	recommend	0.367
-D3.txt	reduc	0.061
-D3.txt	requir	0.075
-D3.txt	research	0.061
-D3.txt	respons	0.075
-D3.txt	result	0.044
-D3.txt	sequenti	0.061
-D3.txt	set	0.052
-D3.txt	significantli	0.052
-D3.txt	specif	0.075
-D3.txt	step	0.075
-D3.txt	strategi	0.044
-D3.txt	task	0.153
-D3.txt	templat	0.122
-D3.txt	text	0.103
-D3.txt	thu	0.075
-D3.txt	time	0.103
-D3.txt	train	0.184
-D3.txt	tune	0.061
-D3.txt	understand	0.052
-D3.txt	unleash	0.075
-D3.txt	unparallel	0.075
-D3.txt	user	0.089
-D3.txt	usual	0.149
-D3.txt	variou	0.061
-D3.txt	vector	0.075
-D3.txt	word	0.122
-D3.txt	world	0.075
-D4.txt	12%	0.075
-D4.txt	achiev	0.052
-D4.txt	adapt	0.150
-D4.txt	advanc	0.075
-D4.txt	aggreg	0.075
-D4.txt	aim	0.062
-D4.txt	art	0.052
-D4.txt	automat	0.075
-D4.txt	base	0.033
-D4.txt	beir	0.062
-D4.txt	benchmark	0.045
-D4.txt	boost	0.075
-D4.txt	captur	0.123
-D4.txt	cluster	0.150
-D4.txt	combin	0.062
-D4.txt	complet	0.075
-D4.txt	constrain	0.075
-D4.txt	crucial	0.075
-D4.txt	custom	0.075
-D4.txt	demonstr	0.052
-D4.txt	differenti	0.075
-D4.txt	distinctli	0.075
-D4.txt	divers	0.300
-D4.txt	effect	0.052
-D4.txt	empir	0.075
-D4.txt	enhanc	0.062
-D4.txt	evalu	0.052
-D4.txt	expans	0.075
-D4.txt	experi	0.052
-D4.txt	explor	0.062
-D4.txt	feedback	0.062
-D4.txt	field	0.075
-D4.txt	framework	0.150
-D4.txt	furthermor	0.062
-D4.txt	gencrf	0.225
-D4.txt	gener	0.178
-D4.txt	group	0.075
-D4.txt	improv	0.045
-D4.txt	inform	0.089
-D4.txt	initi	0.075
-D4.txt	innov	0.075
-D4.txt	input	0.052
-D4.txt	integr	0.062
-D4.txt	intent	0.246
-D4.txt	ir	0.062
-D4.txt	known	0.075
-D4.txt	languag	0.033
-D4.txt	larg	0.033
-D4.txt	leverag	0.104
-D4.txt	limit	0.062
-D4.txt	llm	0.115
-D4.txt	loop	0.075
-D4.txt	method	0.062
-D4.txt	model	0.067
-D4.txt	modifi	0.075
-D4.txt	multipl	0.052
-D4.txt	ndcg@10	0.052
-D4.txt	novel	0.062
-D4.txt	optim	0.075
-D4.txt	paper	0.045
-D4.txt	perform	0.156
-D4.txt	phase	0.075
-D4.txt	potenti	0.062
-D4.txt	previou	0.052
-D4.txt	problem	0.052
-D4.txt	process	0.045
-D4.txt	prompt	0.038
-D4.txt	propos	0.038
-D4.txt	qerm	0.075
-D4.txt	queri	0.401
-D4.txt	rate	0.075
-D4.txt	recent	0.045
-D4.txt	redund	0.075
-D4.txt	refin	0.075
-D4.txt	reformul	0.246
-D4.txt	repres	0.075
-D4.txt	retriev	0.308
-D4.txt	reward	0.075
-D4.txt	search	0.052
-D4.txt	significantli	0.052
-D4.txt	singl	0.075
-D4.txt	sota	0.075
-D4.txt	state	0.052
-D4.txt	strategi	0.045
-D4.txt	success	0.062
-D4.txt	surpass	0.075
-D4.txt	techniqu	0.045
-D4.txt	time	0.052
-D4.txt	use	0.038
-D4.txt	user	0.045
-D4.txt	variabl	0.075
-D4.txt	variou	0.062
-D4.txt	weight	0.075
-D5.txt	abil	0.057
-D5.txt	achiev	0.048
-D5.txt	action	0.069
-D5.txt	advantag	0.069
-D5.txt	aim	0.057
-D5.txt	allow	0.057
-D5.txt	analysi	0.069
-D5.txt	aol	0.069
-D5.txt	approach	0.123
-D5.txt	base	0.061
-D5.txt	benchmark	0.041
-D5.txt	bridg	0.057
-D5.txt	captur	0.170
-D5.txt	coars	0.069
-D5.txt	complex	0.057
-D5.txt	comprehens	0.069
-D5.txt	concret	0.069
-D5.txt	confirm	0.069
-D5.txt	content	0.069
-D5.txt	contrast	0.069
-D5.txt	convert	0.069
-D5.txt	corpora	0.069
-D5.txt	current	0.069
-D5.txt	dataset	0.041
-D5.txt	deep	0.069
-D5.txt	discrep	0.069
-D5.txt	document	0.048
-D5.txt	effect	0.048
-D5.txt	enabl	0.069
-D5.txt	enhanc	0.057
-D5.txt	experi	0.048
-D5.txt	fine	0.048
-D5.txt	focu	0.069
-D5.txt	format	0.069
-D5.txt	fulfil	0.069
-D5.txt	gap	0.069
-D5.txt	gener	0.123
-D5.txt	given	0.057
-D5.txt	grain	0.138
-D5.txt	grammar	0.138
-D5.txt	graph	0.414
-D5.txt	histori	0.069
-D5.txt	includ	0.069
-D5.txt	inform	0.123
-D5.txt	input	0.048
-D5.txt	instruct	0.057
-D5.txt	integr	0.057
-D5.txt	interact	0.207
-D5.txt	introduc	0.113
-D5.txt	involv	0.069
-D5.txt	languag	0.061
-D5.txt	larg	0.031
-D5.txt	learn	0.138
-D5.txt	level	0.069
-D5.txt	leverag	0.048
-D5.txt	link	0.069
-D5.txt	llm	0.212
-D5.txt	methodolog	0.069
-D5.txt	model	0.092
-D5.txt	modern	0.069
-D5.txt	moreov	0.069
-D5.txt	natur	0.057
-D5.txt	need	0.057
-D5.txt	neglect	0.069
-D5.txt	node	0.069
-D5.txt	novel	0.057
-D5.txt	object	0.069
-D5.txt	offer	0.069
-D5.txt	overlook	0.069
-D5.txt	paper	0.041
-D5.txt	paradigm	0.069
-D5.txt	power	0.048
-D5.txt	pre	0.069
-D5.txt	predict	0.069
-D5.txt	priorit	0.069
-D5.txt	process	0.041
-D5.txt	produc	0.069
-D5.txt	propos	0.035
-D5.txt	queri	0.041
-D5.txt	ranker	0.057
-D5.txt	recent	0.041
-D5.txt	represent	0.069
-D5.txt	result	0.041
-D5.txt	rule	0.069
-D5.txt	seamlessli	0.069
-D5.txt	search	0.095
-D5.txt	self	0.069
-D5.txt	semant	0.138
-D5.txt	sequenti	0.057
-D5.txt	seri	0.069
-D5.txt	session	0.207
-D5.txt	set	0.095
-D5.txt	sgr	0.069
-D5.txt	st	0.069
-D5.txt	strategi	0.082
-D5.txt	structur	0.207
-D5.txt	superior	0.069
-D5.txt	supervis	0.057
-D5.txt	symbol	0.276
-D5.txt	task	0.071
-D5.txt	text	0.143
-D5.txt	textual	0.138
-D5.txt	tiangong	0.069
-D5.txt	topolog	0.069
-D5.txt	tradit	0.057
-D5.txt	train	0.057
-D5.txt	typic	0.069
-D5.txt	understand	0.048
-D5.txt	use	0.071
-D5.txt	user	0.041
-D5.txt	word	0.057
-D6.txt	1	0.072
-D6.txt	alpaca	0.145
-D6.txt	author	0.072
-D6.txt	base	0.032
-D6.txt	book	0.072
-D6.txt	captiv	0.072
-D6.txt	cast	0.072
-D6.txt	combin	0.059
-D6.txt	compar	0.145
-D6.txt	compris	0.072
-D6.txt	concis	0.072
-D6.txt	conduct	0.072
-D6.txt	consid	0.072
-D6.txt	consist	0.072
-D6.txt	consum	0.072
-D6.txt	data	0.072
-D6.txt	dataset	0.215
-D6.txt	demonstr	0.050
-D6.txt	descript	0.580
-D6.txt	director	0.072
-D6.txt	emerg	0.072
-D6.txt	essenti	0.072
-D6.txt	evalu	0.050
-D6.txt	exhibit	0.072
-D6.txt	explor	0.059
-D6.txt	featur	0.072
-D6.txt	gener	0.172
-D6.txt	goodread	0.145
-D6.txt	gpt-3.5	0.072
-D6.txt	hit	0.072
-D6.txt	inconsist	0.072
-D6.txt	inform	0.043
-D6.txt	item	0.119
-D6.txt	languag	0.064
-D6.txt	larg	0.032
-D6.txt	like	0.145
-D6.txt	llm	0.186
-D6.txt	manual	0.072
-D6.txt	metric	0.059
-D6.txt	ml	0.072
-D6.txt	model	0.032
-D6.txt	movi	0.217
-D6.txt	movielen	0.072
-D6.txt	mrr	0.059
-D6.txt	multipl	0.050
-D6.txt	natur	0.059
-D6.txt	ndcg	0.072
-D6.txt	obtain	0.145
-D6.txt	open	0.119
-D6.txt	paper	0.043
-D6.txt	pivot	0.072
-D6.txt	play	0.072
-D6.txt	potenti	0.059
-D6.txt	power	0.050
-D6.txt	process	0.043
-D6.txt	promis	0.059
-D6.txt	prompt	0.074
-D6.txt	provid	0.072
-D6.txt	publish	0.072
-D6.txt	recent	0.043
-D6.txt	recommend	0.059
-D6.txt	result	0.086
-D6.txt	role	0.072
-D6.txt	scrape	0.217
-D6.txt	shot	0.059
-D6.txt	signific	0.072
-D6.txt	sourc	0.119
-D6.txt	studi	0.072
-D6.txt	subsequ	0.072
-D6.txt	summari	0.072
-D6.txt	suscept	0.072
-D6.txt	task	0.037
-D6.txt	techniqu	0.043
-D6.txt	time	0.050
-D6.txt	titl	0.072
-D6.txt	tool	0.072
-D6.txt	tradit	0.059
-D6.txt	use	0.111
-D6.txt	viewer	0.072
-D6.txt	web	0.145
-D6.txt	year	0.072
+D1	18%	1	0.0864
+D1	24%	1	0.0864
+D1	5%	1	0.0864
+D1	9%	1	0.0864
+D1	abil	1	0.0709
+D1	align	1	0.0864
+D1	approach	1	0.0513
+D1	art	1	0.0598
+D1	base	1	0.0384
+D1	benchmark	1	0.0513
+D1	benefit	1	0.0864
+D1	better	2	0.1728
+D1	context	1	0.0864
+D1	document	1	0.0598
+D1	ensembl	2	0.1728
+D1	evalu	1	0.0598
+D1	experi	1	0.0598
+D1	exploit	1	0.0864
+D1	feedback	3	0.2126
+D1	gain	1	0.0864
+D1	gener	2	0.1025
+D1	genqrensembl	2	0.1728
+D1	genqrensemblerf	2	0.1728
+D1	help	1	0.0864
+D1	improv	5	0.2563
+D1	incorpor	1	0.0864
+D1	inher	1	0.0864
+D1	inspir	1	0.0709
+D1	instruct	1	0.0709
+D1	intent	1	0.0709
+D1	introduc	1	0.0709
+D1	investig	1	0.0864
+D1	ir	1	0.0709
+D1	keyword	1	0.0864
+D1	knowledg	1	0.0864
+D1	languag	1	0.0384
+D1	larg	1	0.0384
+D1	leverag	1	0.0598
+D1	mani	1	0.0864
+D1	map	1	0.0864
+D1	model	1	0.0384
+D1	mrr	1	0.0709
+D1	msmarco	1	0.0864
+D1	multipl	1	0.0598
+D1	ndcg@10	2	0.1197
+D1	origin	1	0.0864
+D1	paraphras	1	0.0864
+D1	passag	1	0.0864
+D1	perform	1	0.0598
+D1	post	1	0.0864
+D1	previou	1	0.0598
+D1	promis	1	0.0709
+D1	prompt	2	0.0886
+D1	propos	1	0.0443
+D1	pseudo	2	0.1728
+D1	qr	2	0.1728
+D1	queri	3	0.1538
+D1	rank	1	0.0709
+D1	recent	1	0.0513
+D1	reformul	3	0.2126
+D1	rel	2	0.1728
+D1	relev	3	0.2593
+D1	retriev	2	0.1417
+D1	search	2	0.1197
+D1	set	2	0.1197
+D1	shot	3	0.2126
+D1	shown	1	0.0864
+D1	state	1	0.0598
+D1	strategi	1	0.0513
+D1	success	1	0.0709
+D1	task	2	0.0886
+D1	techniqu	2	0.1025
+D1	text	1	0.0598
+D1	transform	1	0.0864
+D1	ultim	1	0.0864
+D1	upto	1	0.0864
+D1	use	3	0.1328
+D1	user	2	0.1025
+D1	variant	1	0.0709
+D1	zero	3	0.2593
+D2	10%	2	0.1430
+D2	175	1	0.0715
+D2	2	1	0.0715
+D2	20	1	0.0715
+D2	2019	1	0.0715
+D2	2020	1	0.0715
+D2	4.2%	1	0.0715
+D2	50	1	0.0715
+D2	achiev	2	0.0990
+D2	analyz	1	0.0715
+D2	approach	1	0.0424
+D2	argu	1	0.0715
+D2	art	1	0.0495
+D2	averag	1	0.0715
+D2	b	2	0.1430
+D2	base	4	0.1269
+D2	baselin	2	0.1430
+D2	beir	1	0.0586
+D2	benchmark	2	0.0848
+D2	best	1	0.0715
+D2	blackbox	2	0.1430
+D2	burden	1	0.0715
+D2	candid	1	0.0715
+D2	challeng	1	0.0715
+D2	chatgpt	1	0.0715
+D2	commerci	2	0.1430
+D2	competit	1	0.0715
+D2	complex	1	0.0586
+D2	dataset	1	0.0424
+D2	difficult	1	0.0715
+D2	directli	1	0.0715
+D2	dl	1	0.0715
+D2	document	2	0.0990
+D2	effici	1	0.0586
+D2	estim	1	0.0715
+D2	exist	1	0.0715
+D2	favor	1	0.0715
+D2	feed	1	0.0715
+D2	fine	1	0.0495
+D2	flan	1	0.0715
+D2	formul	1	0.0715
+D2	fulli	1	0.0715
+D2	furthermor	1	0.0586
+D2	gpt-4	1	0.0715
+D2	howev	1	0.0715
+D2	improv	1	0.0424
+D2	instructgpt	1	0.0715
+D2	languag	1	0.0317
+D2	larg	1	0.0317
+D2	linear	1	0.0715
+D2	listwis	1	0.0715
+D2	literatur	2	0.1430
+D2	llm	6	0.2198
+D2	method	1	0.0586
+D2	metric	1	0.0586
+D2	model	3	0.0952
+D2	moder	1	0.0715
+D2	ndcg@10	1	0.0495
+D2	new	1	0.0715
+D2	open	1	0.0586
+D2	outperform	4	0.2860
+D2	pairwis	1	0.0715
+D2	paper	1	0.0424
+D2	paramet	2	0.1430
+D2	perform	2	0.0990
+D2	pointwis	2	0.1430
+D2	possibl	1	0.0715
+D2	practic	1	0.0715
+D2	previou	1	0.0495
+D2	problem	1	0.0495
+D2	prompt	4	0.1465
+D2	propos	2	0.0733
+D2	prp	4	0.2860
+D2	queri	1	0.0424
+D2	rank	6	0.3517
+D2	ranker	1	0.0586
+D2	reduc	1	0.0586
+D2	research	1	0.0586
+D2	result	2	0.0848
+D2	seven	1	0.0715
+D2	sever	1	0.0715
+D2	shelf	1	0.0715
+D2	significantli	1	0.0495
+D2	size	2	0.1430
+D2	solut	3	0.2145
+D2	sourc	1	0.0586
+D2	standard	1	0.0715
+D2	state	1	0.0495
+D2	supervis	1	0.0586
+D2	task	1	0.0366
+D2	techniqu	1	0.0424
+D2	templat	1	0.0586
+D2	trec	1	0.0715
+D2	tune	1	0.0586
+D2	ul	1	0.0715
+D2	understand	1	0.0495
+D2	use	5	0.1831
+D2	variant	1	0.0586
+D2	x	1	0.0715
+D3	address	1	0.0746
+D3	allow	1	0.0612
+D3	approach	1	0.0443
+D3	attempt	1	0.0746
+D3	base	2	0.0663
+D3	bridg	2	0.1224
+D3	capabl	1	0.0746
+D3	commun	1	0.0746
+D3	contain	1	0.0746
+D3	continu	1	0.0746
+D3	dataset	1	0.0443
+D3	demonstr	1	0.0517
+D3	design	1	0.0746
+D3	discret	2	0.1493
+D3	distil	2	0.1493
+D3	e.g.	1	0.0746
+D3	effect	1	0.0517
+D3	effici	5	0.3060
+D3	experiment	1	0.0746
+D3	extens	1	0.0746
+D3	fine	1	0.0517
+D3	given	1	0.0612
+D3	i.e.	1	0.0746
+D3	id	3	0.2239
+D3	immedi	1	0.0746
+D3	improv	4	0.1771
+D3	infer	3	0.2239
+D3	inform	1	0.0443
+D3	input	1	0.0517
+D3	inspir	1	0.0612
+D3	item	2	0.1224
+D3	languag	1	0.0331
+D3	larg	1	0.0331
+D3	limit	2	0.1224
+D3	llm	4	0.1529
+D3	long	3	0.2239
+D3	manifest	1	0.0746
+D3	model	8	0.2650
+D3	mostli	1	0.0746
+D3	multi	1	0.0746
+D3	n	1	0.0746
+D3	need	1	0.0612
+D3	noisi	1	0.0746
+D3	plain	1	0.0746
+D3	pod	1	0.0746
+D3	power	1	0.0517
+D3	problem	1	0.0517
+D3	process	1	0.0443
+D3	prompt	4	0.1529
+D3	propos	1	0.0382
+D3	real	1	0.0746
+D3	reason	1	0.0746
+D3	recommend	6	0.3672
+D3	reduc	1	0.0612
+D3	requir	1	0.0746
+D3	research	1	0.0612
+D3	respons	1	0.0746
+D3	result	1	0.0443
+D3	sequenti	1	0.0612
+D3	set	1	0.0517
+D3	significantli	1	0.0517
+D3	specif	1	0.0746
+D3	step	1	0.0746
+D3	strategi	1	0.0443
+D3	task	4	0.1529
+D3	templat	2	0.1224
+D3	text	2	0.1033
+D3	thu	1	0.0746
+D3	time	2	0.1033
+D3	train	3	0.1836
+D3	tune	1	0.0612
+D3	understand	1	0.0517
+D3	unleash	1	0.0746
+D3	unparallel	1	0.0746
+D3	user	2	0.0886
+D3	usual	2	0.1493
+D3	variou	1	0.0612
+D3	vector	1	0.0746
+D3	word	2	0.1224
+D3	world	1	0.0746
+D4	12%	1	0.0751
+D4	achiev	1	0.0520
+D4	adapt	2	0.1502
+D4	advanc	1	0.0751
+D4	aggreg	1	0.0751
+D4	aim	1	0.0616
+D4	art	1	0.0520
+D4	automat	1	0.0751
+D4	base	1	0.0333
+D4	beir	1	0.0616
+D4	benchmark	1	0.0445
+D4	boost	1	0.0751
+D4	captur	2	0.1231
+D4	cluster	2	0.1502
+D4	combin	1	0.0616
+D4	complet	1	0.0751
+D4	constrain	1	0.0751
+D4	crucial	1	0.0751
+D4	custom	1	0.0751
+D4	demonstr	1	0.0520
+D4	differenti	1	0.0751
+D4	distinctli	1	0.0751
+D4	divers	4	0.3003
+D4	effect	1	0.0520
+D4	empir	1	0.0751
+D4	enhanc	1	0.0616
+D4	evalu	1	0.0520
+D4	expans	1	0.0751
+D4	experi	1	0.0520
+D4	explor	1	0.0616
+D4	feedback	1	0.0616
+D4	field	1	0.0751
+D4	framework	2	0.1502
+D4	furthermor	1	0.0616
+D4	gencrf	3	0.2252
+D4	gener	4	0.1782
+D4	group	1	0.0751
+D4	improv	1	0.0445
+D4	inform	2	0.0891
+D4	initi	1	0.0751
+D4	innov	1	0.0751
+D4	input	1	0.0520
+D4	integr	1	0.0616
+D4	intent	4	0.2463
+D4	ir	1	0.0616
+D4	known	1	0.0751
+D4	languag	1	0.0333
+D4	larg	1	0.0333
+D4	leverag	2	0.1040
+D4	limit	1	0.0616
+D4	llm	3	0.1154
+D4	loop	1	0.0751
+D4	method	1	0.0616
+D4	model	2	0.0667
+D4	modifi	1	0.0751
+D4	multipl	1	0.0520
+D4	ndcg@10	1	0.0520
+D4	novel	1	0.0616
+D4	optim	1	0.0751
+D4	paper	1	0.0445
+D4	perform	3	0.1559
+D4	phase	1	0.0751
+D4	potenti	1	0.0616
+D4	previou	1	0.0520
+D4	problem	1	0.0520
+D4	process	1	0.0445
+D4	prompt	1	0.0385
+D4	propos	1	0.0385
+D4	qerm	1	0.0751
+D4	queri	9	0.4009
+D4	rate	1	0.0751
+D4	recent	1	0.0445
+D4	redund	1	0.0751
+D4	refin	1	0.0751
+D4	reformul	4	0.2463
+D4	repres	1	0.0751
+D4	retriev	5	0.3078
+D4	reward	1	0.0751
+D4	search	1	0.0520
+D4	significantli	1	0.0520
+D4	singl	1	0.0751
+D4	sota	1	0.0751
+D4	state	1	0.0520
+D4	strategi	1	0.0445
+D4	success	1	0.0616
+D4	surpass	1	0.0751
+D4	techniqu	1	0.0445
+D4	time	1	0.0520
+D4	use	1	0.0385
+D4	user	1	0.0445
+D4	variabl	1	0.0751
+D4	variou	1	0.0616
+D4	weight	1	0.0751
+D5	abil	1	0.0565
+D5	achiev	1	0.0477
+D5	action	1	0.0689
+D5	advantag	1	0.0689
+D5	aim	1	0.0565
+D5	allow	1	0.0565
+D5	analysi	1	0.0689
+D5	aol	1	0.0689
+D5	approach	3	0.1227
+D5	base	2	0.0612
+D5	benchmark	1	0.0409
+D5	bridg	1	0.0565
+D5	captur	3	0.1696
+D5	coars	1	0.0689
+D5	complex	1	0.0565
+D5	comprehens	1	0.0689
+D5	concret	1	0.0689
+D5	confirm	1	0.0689
+D5	content	1	0.0689
+D5	contrast	1	0.0689
+D5	convert	1	0.0689
+D5	corpora	1	0.0689
+D5	current	1	0.0689
+D5	dataset	1	0.0409
+D5	deep	1	0.0689
+D5	discrep	1	0.0689
+D5	document	1	0.0477
+D5	effect	1	0.0477
+D5	enabl	1	0.0689
+D5	enhanc	1	0.0565
+D5	experi	1	0.0477
+D5	fine	1	0.0477
+D5	focu	1	0.0689
+D5	format	1	0.0689
+D5	fulfil	1	0.0689
+D5	gap	1	0.0689
+D5	gener	3	0.1227
+D5	given	1	0.0565
+D5	grain	2	0.1379
+D5	grammar	2	0.1379
+D5	graph	6	0.4137
+D5	histori	1	0.0689
+D5	includ	1	0.0689
+D5	inform	3	0.1227
+D5	input	1	0.0477
+D5	instruct	1	0.0565
+D5	integr	1	0.0565
+D5	interact	3	0.2068
+D5	introduc	2	0.1131
+D5	involv	1	0.0689
+D5	languag	2	0.0612
+D5	larg	1	0.0306
+D5	learn	2	0.1379
+D5	level	1	0.0689
+D5	leverag	1	0.0477
+D5	link	1	0.0689
+D5	llm	6	0.2119
+D5	methodolog	1	0.0689
+D5	model	3	0.0918
+D5	modern	1	0.0689
+D5	moreov	1	0.0689
+D5	natur	1	0.0565
+D5	need	1	0.0565
+D5	neglect	1	0.0689
+D5	node	1	0.0689
+D5	novel	1	0.0565
+D5	object	1	0.0689
+D5	offer	1	0.0689
+D5	overlook	1	0.0689
+D5	paper	1	0.0409
+D5	paradigm	1	0.0689
+D5	power	1	0.0477
+D5	pre	1	0.0689
+D5	predict	1	0.0689
+D5	priorit	1	0.0689
+D5	process	1	0.0409
+D5	produc	1	0.0689
+D5	propos	1	0.0353
+D5	queri	1	0.0409
+D5	ranker	1	0.0565
+D5	recent	1	0.0409
+D5	represent	1	0.0689
+D5	result	1	0.0409
+D5	rule	1	0.0689
+D5	seamlessli	1	0.0689
+D5	search	2	0.0955
+D5	self	1	0.0689
+D5	semant	2	0.1379
+D5	sequenti	1	0.0565
+D5	seri	1	0.0689
+D5	session	3	0.2068
+D5	set	2	0.0955
+D5	sgr	1	0.0689
+D5	st	1	0.0689
+D5	strategi	2	0.0818
+D5	structur	3	0.2068
+D5	superior	1	0.0689
+D5	supervis	1	0.0565
+D5	symbol	4	0.2758
+D5	task	2	0.0706
+D5	text	3	0.1432
+D5	textual	2	0.1379
+D5	tiangong	1	0.0689
+D5	topolog	1	0.0689
+D5	tradit	1	0.0565
+D5	train	1	0.0565
+D5	typic	1	0.0689
+D5	understand	1	0.0477
+D5	use	2	0.0706
+D5	user	1	0.0409
+D5	word	1	0.0565
+D6	1	1	0.0725
+D6	alpaca	2	0.1449
+D6	author	1	0.0725
+D6	base	1	0.0322
+D6	book	1	0.0725
+D6	captiv	1	0.0725
+D6	cast	1	0.0725
+D6	combin	1	0.0594
+D6	compar	2	0.1449
+D6	compris	1	0.0725
+D6	concis	1	0.0725
+D6	conduct	1	0.0725
+D6	consid	1	0.0725
+D6	consist	1	0.0725
+D6	consum	1	0.0725
+D6	data	1	0.0725
+D6	dataset	5	0.2150
+D6	demonstr	1	0.0502
+D6	descript	8	0.5798
+D6	director	1	0.0725
+D6	emerg	1	0.0725
+D6	essenti	1	0.0725
+D6	evalu	1	0.0502
+D6	exhibit	1	0.0725
+D6	explor	1	0.0594
+D6	featur	1	0.0725
+D6	gener	4	0.1720
+D6	goodread	2	0.1449
+D6	gpt-3.5	1	0.0725
+D6	hit	1	0.0725
+D6	inconsist	1	0.0725
+D6	inform	1	0.0430
+D6	item	2	0.1189
+D6	languag	2	0.0643
+D6	larg	1	0.0322
+D6	like	2	0.1449
+D6	llm	5	0.1856
+D6	manual	1	0.0725
+D6	metric	1	0.0594
+D6	ml	1	0.0725
+D6	model	1	0.0322
+D6	movi	3	0.2174
+D6	movielen	1	0.0725
+D6	mrr	1	0.0594
+D6	multipl	1	0.0502
+D6	natur	1	0.0594
+D6	ndcg	1	0.0725
+D6	obtain	2	0.1449
+D6	open	2	0.1189
+D6	paper	1	0.0430
+D6	pivot	1	0.0725
+D6	play	1	0.0725
+D6	potenti	1	0.0594
+D6	power	1	0.0502
+D6	process	1	0.0430
+D6	promis	1	0.0594
+D6	prompt	2	0.0743
+D6	provid	1	0.0725
+D6	publish	1	0.0725
+D6	recent	1	0.0430
+D6	recommend	1	0.0594
+D6	result	2	0.0860
+D6	role	1	0.0725
+D6	scrape	3	0.2174
+D6	shot	1	0.0594
+D6	signific	1	0.0725
+D6	sourc	2	0.1189
+D6	studi	1	0.0725
+D6	subsequ	1	0.0725
+D6	summari	1	0.0725
+D6	suscept	1	0.0725
+D6	task	1	0.0371
+D6	techniqu	1	0.0430
+D6	time	1	0.0502
+D6	titl	1	0.0725
+D6	tool	1	0.0725
+D6	tradit	1	0.0594
+D6	use	3	0.1114
+D6	viewer	1	0.0725
+D6	web	2	0.1449
+D6	year	1	0.0725

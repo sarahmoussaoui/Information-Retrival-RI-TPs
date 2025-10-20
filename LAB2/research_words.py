@@ -1,21 +1,21 @@
 # Define your words and order explicitly
 words_order = [
-    ('D1.txt', 'ndcg@10'),
-    ('D2.txt', 'gpt-4'),
-    ('D3.txt', 'e.g.'),
-    ('D3.txt', 'model'),
-    ('D4.txt', 'llm'),
-    ('D5.txt', 'graph'),
-    ('D5.txt', 'model'),
-    ('D6.txt', 'descript'),
-    ('D6.txt', 'gpt-3.5'),
-    ('D1.txt', 'languag'),
-    ('D2.txt', 'languag'),
-    ('D3.txt', 'languag'),
-    ('D4.txt', 'languag'),
-    ('D5.txt', 'languag'),
-    ('D6.txt', 'languag'),
-    ('D2.txt', 'chatgpt')
+    ('D1', 'ndcg@10'),
+    ('D2', 'gpt-4'),
+    ('D3', 'e.g.'),
+    ('D3', 'model'),
+    ('D4', 'llm'),
+    ('D5', 'graph'),
+    ('D5', 'model'),
+    ('D6', 'descript'),
+    ('D6', 'gpt-3.5'),
+    ('D1', 'languag'),
+    ('D2', 'languag'),
+    ('D3', 'languag'),
+    ('D4', 'languag'),
+    ('D5', 'languag'),
+    ('D6', 'languag'),
+    ('D2', 'chatgpt')
 ]
 
 matches = []
