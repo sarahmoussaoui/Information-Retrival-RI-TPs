@@ -54,7 +54,7 @@ for file in os.listdir(folder):
             docs[file] = f.read()
 
 print("Documents read:", list(docs.keys()))
-
+N = len(docs)
 # ------------------------------------------------------------
 # 2. TOKENIZATION
 # ------------------------------------------------------------
@@ -98,60 +98,59 @@ def stem_porter(tokens):
 # ------------------------------------------------------------
 # 6. TERM FREQUENCY & WEIGHTING (TF-IDF)
 # ------------------------------------------------------------
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 import pandas as pd
 
-# Prepare corpus
-corpus = [text for text in docs.values()]
-doc_names = list(docs.keys())
-
-# ---- 1. Compute raw term frequencies (counts) ----
-count_vectorizer = CountVectorizer(
-    stop_words='english',
-    tokenizer=tokenize_and_stem,
-    token_pattern=None
-)
-term_freq_matrix = count_vectorizer.fit_transform(corpus)
-terms = count_vectorizer.get_feature_names_out()
-
-# ---- 2. Compute TF-IDF weights ----
-tfidf_vectorizer = TfidfVectorizer(
-    stop_words='english',
-    tokenizer=tokenize_and_stem,
-    token_pattern=None
-)
-tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
-terms_tfidf = tfidf_vectorizer.get_feature_names_out()
-
-# Ensure terms match (they should if tokenization is identical)
-assert list(terms) == list(terms_tfidf), "Terms mismatch between TF and TF-IDF!"
+import math
+from collections import Counter
 
 # ------------------------------------------------------------
-# 7. SAVE WEIGHTED DESCRIPTOR FILE
-# Format: <Document> <Term> <Frequency> <TF-IDF>
+# 6. MANUAL TF, IDF, AND TF-IDF COMPUTATION
 # ------------------------------------------------------------
-with open("LAB2/results/descriptor_weighted.txt", "w") as f:
-    for i, doc in enumerate(doc_names):
-        # remove .txt extension if present
+
+# ------------------------------------------------------------
+# TOKENIZE AND COUNT FREQUENCIES
+# ------------------------------------------------------------
+tokenized_docs = {doc: tokenize_and_stem(text) for doc, text in docs.items()}
+
+# 1️⃣ Term frequencies per document
+term_freqs = {doc: Counter(tokens) for doc, tokens in tokenized_docs.items()}
+
+# 2️⃣ Document frequencies (dfₜ)
+df = Counter()
+for tokens in tokenized_docs.values():
+    for term in set(tokens):
+        df[term] += 1
+
+# ------------------------------------------------------------
+# COMPUTE CUSTOM TF–IDF
+# ------------------------------------------------------------
+tfidf = {}
+for doc, freqs in term_freqs.items():
+    tfidf[doc] = {}
+    max_freq = max(freqs.values())  # max frequency in this document
+    for term, f_td in freqs.items():
+        tf = f_td / max_freq
+        idf = math.log10((N / df[term]) + 1)
+        tfidf[doc][term] = tf * idf
+
+# ------------------------------------------------------------
+# SAVE RESULTS
+# ------------------------------------------------------------
+os.makedirs("LAB2/results", exist_ok=True)
+
+# Descriptor: Document → Term → Frequency → TF–IDF
+with open("LAB2/results/descriptor_weighted.txt", "w", encoding="utf-8") as f:
+    for doc, terms in term_freqs.items():
         doc_id = os.path.splitext(doc)[0]
-        for j, term in enumerate(terms):
-            freq = term_freq_matrix[i, j]
-            tfidf = tfidf_matrix[i, j]
-            if freq > 0:
-                f.write(f"{doc_id}\t{term}\t{freq}\t{tfidf:.4f}\n")
+        for term, freq in terms.items():
+            f.write(f"{doc_id}\t{term}\t{freq}\t{tfidf[doc][term]:.6f}\n")
 
-# ------------------------------------------------------------
-# 8. SAVE WEIGHTED INVERTED INDEX FILE
-# Format: <Term> <Document> <Frequency> <TF-IDF>
-# ------------------------------------------------------------
-with open("LAB2/results/inverted_index_weighted.txt", "w") as f:
-    for j, term in enumerate(terms):
-        for i, doc in enumerate(doc_names):
-            # remove .txt extension
-            doc_id = os.path.splitext(doc)[0]
-            freq = term_freq_matrix[i, j]
-            tfidf = tfidf_matrix[i, j]
-            if freq > 0:
-                f.write(f"{term}\t{doc_id}\t{freq}\t{tfidf:.4f}\n")
+# Inverted Index: Term → Document → Frequency → TF–IDF
+with open("LAB2/results/inverted_index_weighted.txt", "w", encoding="utf-8") as f:
+    for term in sorted(df.keys()):
+        for doc in docs.keys():
+            if term in term_freqs[doc]:
+                freq = term_freqs[doc][term]
+                f.write(f"{term}\t{os.path.splitext(doc)[0]}\t{freq}\t{tfidf[doc][term]:.6f}\n")
 
-print("✅ Weighted descriptor and inverted index created successfully.")
+print("✅ Custom TF–IDF (normalized by max freq, log10) computed successfully.")
