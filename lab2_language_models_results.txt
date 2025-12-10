@@ -1,0 +1,382 @@
+================================================================================
+Lab 2: Probabilistic Unigram Language Models for Information Retrieval
+================================================================================
+
+Loaded 6 documents: ['D1', 'D2', 'D3', 'D4', 'D5', 'D6']
+Vocabulary size |V| = 392 terms
+
+Document lengths (Nd):
+  D1: Nd = 119
+  D2: Nd = 150
+  D3: Nd = 141
+  D4: Nd = 134
+  D5: Nd = 160
+  D6: Nd = 125
+
+================================================================================
+MODEL 1: Unsmoothed Language Model (MLE)
+================================================================================
+Formula: P(w|d) = tf(w,d) / Nd
+Score: Σ log P(w|d) for w in query
+
+Query q1: large language models for information retrieval and ranking
+Preprocessed terms: ['larg', 'languag', 'model', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D6   : -∞ (query term(s) not in document)
+  2. D2   : -∞ (query term(s) not in document)
+  3. D4   : -∞ (query term(s) not in document)
+  4. D1   : -∞ (query term(s) not in document)
+  5. D5   : -∞ (query term(s) not in document)
+  6. D3   : -∞ (query term(s) not in document)
+
+--------------------------------------------------------------------------------
+
+Query q2: LLM for information retrieval and Ranking
+Preprocessed terms: ['llm', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D6   : -∞ (query term(s) not in document)
+  2. D2   : -∞ (query term(s) not in document)
+  3. D4   : -∞ (query term(s) not in document)
+  4. D1   : -∞ (query term(s) not in document)
+  5. D5   : -∞ (query term(s) not in document)
+  6. D3   : -∞ (query term(s) not in document)
+
+--------------------------------------------------------------------------------
+
+Query q3: query Reformulation in information retrieval
+Preprocessed terms: ['queri', 'reformul', 'inform', 'retriev']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -5.9521
+  2. D6   : -∞ (query term(s) not in document)
+  3. D2   : -∞ (query term(s) not in document)
+  4. D1   : -∞ (query term(s) not in document)
+  5. D5   : -∞ (query term(s) not in document)
+  6. D3   : -∞ (query term(s) not in document)
+
+--------------------------------------------------------------------------------
+
+Query q4: ranking Documents
+Preprocessed terms: ['rank', 'document']
+
+Ranked documents (Log-Likelihood):
+  1. D2   :    -3.2730
+  2. D1   :    -4.1511
+  3. D6   : -∞ (query term(s) not in document)
+  4. D4   : -∞ (query term(s) not in document)
+  5. D5   : -∞ (query term(s) not in document)
+  6. D3   : -∞ (query term(s) not in document)
+
+--------------------------------------------------------------------------------
+
+Query q5: Optimizing recommendation systems with LLMs by leveraging item metadata
+Preprocessed terms: ['optim', 'recommend', 'system', 'llm', 'leverag', 'item', 'metadata']
+
+Ranked documents (Log-Likelihood):
+  1. D6   : -∞ (query term(s) not in document)
+  2. D2   : -∞ (query term(s) not in document)
+  3. D4   : -∞ (query term(s) not in document)
+  4. D1   : -∞ (query term(s) not in document)
+  5. D5   : -∞ (query term(s) not in document)
+  6. D3   : -∞ (query term(s) not in document)
+
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+MODEL 2: Add-1 (Laplace) Smoothing
+================================================================================
+Formula: P(w|d) = (tf(w,d) + 1) / (Nd + |V|)
+|V| = 392
+Score: Σ log P(w|d) for w in query
+
+Query q1: large language models for information retrieval and ranking
+Preprocessed terms: ['larg', 'languag', 'model', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :   -13.9915
+  2. D2   :   -14.3548
+  3. D5   :   -14.4694
+  4. D3   :   -14.5030
+  5. D1   :   -14.5693
+  6. D6   :   -14.9007
+
+--------------------------------------------------------------------------------
+
+Query q2: LLM for information retrieval and Ranking
+Preprocessed terms: ['llm', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -9.0266
+  2. D2   :    -9.2458
+  3. D5   :    -9.5206
+  4. D6   :    -9.7748
+  5. D3   :    -9.9069
+  6. D1   :   -10.0555
+
+--------------------------------------------------------------------------------
+
+Query q3: query Reformulation in information retrieval
+Preprocessed terms: ['queri', 'reformul', 'inform', 'retriev']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -7.9297
+  2. D1   :    -9.1524
+  3. D5   :   -10.0647
+  4. D6   :   -10.5529
+  5. D3   :   -10.6059
+  6. D2   :   -10.6350
+
+--------------------------------------------------------------------------------
+
+Query q4: ranking Documents
+Preprocessed terms: ['rank', 'document']
+
+Ranked documents (Log-Likelihood):
+  1. D2   :    -4.1458
+  2. D1   :    -4.8148
+  3. D5   :    -5.1828
+  4. D6   :    -5.4270
+  5. D4   :    -5.4420
+  6. D3   :    -5.4535
+
+--------------------------------------------------------------------------------
+
+Query q5: Optimizing recommendation systems with LLMs by leveraging item metadata
+Preprocessed terms: ['optim', 'recommend', 'system', 'llm', 'leverag', 'item', 'metadata']
+
+Ranked documents (Log-Likelihood):
+  1. D3   :   -16.7649
+  2. D6   :   -17.1371
+  3. D4   :   -17.6667
+  4. D5   :   -18.0474
+  5. D2   :   -18.2929
+  6. D1   :   -18.6579
+
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+MODEL 3: Good-Turing Smoothing
+================================================================================
+Formula: c* = (c+1) * N_{c+1}/N_c; P(w|d) = c*/Nd; unseen: p0 = N1/(Nd*V0)
+Score: Σ log P(w|d) for w in query
+
+Query q1: large language models for information retrieval and ranking
+Preprocessed terms: ['larg', 'languag', 'model', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D2   :   -13.3368
+  2. D4   :   -13.9220
+  3. D1   :   -14.1577
+  4. D3   :   -14.4274
+  5. D5   :   -15.1195
+  6. D6   :   -15.1557
+
+--------------------------------------------------------------------------------
+
+Query q2: LLM for information retrieval and Ranking
+Preprocessed terms: ['llm', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -7.6050
+  2. D2   :    -8.2469
+  3. D5   :    -9.3542
+  4. D6   :    -9.4322
+  5. D1   :    -9.8679
+  6. D3   :   -10.1904
+
+--------------------------------------------------------------------------------
+
+Query q3: query Reformulation in information retrieval
+Preprocessed terms: ['queri', 'reformul', 'inform', 'retriev']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -6.7071
+  2. D1   :    -7.9317
+  3. D5   :   -10.6765
+  4. D2   :   -10.7839
+  5. D6   :   -10.8040
+  6. D3   :   -10.9463
+
+--------------------------------------------------------------------------------
+
+Query q4: ranking Documents
+Preprocessed terms: ['rank', 'document']
+
+Ranked documents (Log-Likelihood):
+  1. D2   :    -3.9720
+  2. D1   :    -4.7115
+  3. D4   :    -5.4015
+  4. D5   :    -5.4342
+  5. D6   :    -5.5394
+  6. D3   :    -5.6165
+
+--------------------------------------------------------------------------------
+
+Query q5: Optimizing recommendation systems with LLMs by leveraging item metadata
+Preprocessed terms: ['optim', 'recommend', 'system', 'llm', 'leverag', 'item', 'metadata']
+
+Ranked documents (Log-Likelihood):
+  1. D3   :   -16.5859
+  2. D6   :   -16.8285
+  3. D4   :   -17.0997
+  4. D5   :   -17.6041
+  5. D2   :   -17.7509
+  6. D1   :   -19.0199
+
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+MODEL 4: Jelinek-Mercer Smoothing (λ=0.5)
+================================================================================
+Formula: P(w|d) = λ*P_MLE(w|d) + (1-λ)*P_MLE(w|C)
+λ = 0.5
+Score: Σ log P(w|d) for w in query
+
+Query q1: large language models for information retrieval and ranking
+Preprocessed terms: ['larg', 'languag', 'model', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :   -11.8859
+  2. D2   :   -12.2918
+  3. D1   :   -12.3212
+  4. D5   :   -12.4363
+  5. D3   :   -12.4871
+  6. D6   :   -12.6721
+
+--------------------------------------------------------------------------------
+
+Query q2: LLM for information retrieval and Ranking
+Preprocessed terms: ['llm', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -7.5380
+  2. D2   :    -7.8273
+  3. D5   :    -8.0941
+  4. D1   :    -8.1871
+  5. D6   :    -8.2965
+  6. D3   :    -8.4014
+
+--------------------------------------------------------------------------------
+
+Query q3: query Reformulation in information retrieval
+Preprocessed terms: ['queri', 'reformul', 'inform', 'retriev']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -6.6673
+  2. D1   :    -7.7240
+  3. D5   :    -8.5522
+  4. D6   :    -8.9075
+  5. D3   :    -8.9321
+  6. D2   :    -9.0524
+
+--------------------------------------------------------------------------------
+
+Query q4: ranking Documents
+Preprocessed terms: ['rank', 'document']
+
+Ranked documents (Log-Likelihood):
+  1. D2   :    -3.6577
+  2. D1   :    -4.2540
+  3. D5   :    -4.6312
+  4. D6   :    -4.9920
+  5. D4   :    -4.9920
+  6. D3   :    -4.9920
+
+--------------------------------------------------------------------------------
+
+Query q5: Optimizing recommendation systems with LLMs by leveraging item metadata
+Preprocessed terms: ['optim', 'recommend', 'system', 'llm', 'leverag', 'item', 'metadata']
+
+Ranked documents (Log-Likelihood):
+  1. D6   : -∞
+  2. D2   : -∞
+  3. D4   : -∞
+  4. D1   : -∞
+  5. D5   : -∞
+  6. D3   : -∞
+
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+MODEL 5: Dirichlet Smoothing
+================================================================================
+Formula: P(w|d) = (tf(w,d) + μ*P_MLE(w|C)) / (|d| + μ)
+N_avg = 138.17 (average document length)
+μ = 0.3 × N_avg = 0.3 × 138.17 = 41.45
+Score: Σ log P(w|d) for w in query
+
+Query q1: large language models for information retrieval and ranking
+Preprocessed terms: ['larg', 'languag', 'model', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :   -12.0990
+  2. D1   :   -12.6477
+  3. D2   :   -12.9503
+  4. D5   :   -13.1266
+  5. D3   :   -13.1389
+  6. D6   :   -13.3363
+
+--------------------------------------------------------------------------------
+
+Query q2: LLM for information retrieval and Ranking
+Preprocessed terms: ['llm', 'inform', 'retriev', 'rank']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -7.7099
+  2. D2   :    -8.3800
+  3. D1   :    -8.6967
+  4. D5   :    -8.7462
+  5. D6   :    -8.8743
+  6. D3   :    -9.1101
+
+--------------------------------------------------------------------------------
+
+Query q3: query Reformulation in information retrieval
+Preprocessed terms: ['queri', 'reformul', 'inform', 'retriev']
+
+Ranked documents (Log-Likelihood):
+  1. D4   :    -6.2519
+  2. D1   :    -7.8130
+  3. D5   :    -9.3730
+  4. D6   :    -9.8216
+  5. D3   :    -9.9810
+  6. D2   :   -10.2656
+
+--------------------------------------------------------------------------------
+
+Query q4: ranking Documents
+Preprocessed terms: ['rank', 'document']
+
+Ranked documents (Log-Likelihood):
+  1. D2   :    -3.4189
+  2. D1   :    -4.2012
+  3. D5   :    -4.9851
+  4. D6   :    -5.5975
+  5. D4   :    -5.6432
+  6. D3   :    -5.6772
+
+--------------------------------------------------------------------------------
+
+Query q5: Optimizing recommendation systems with LLMs by leveraging item metadata
+Preprocessed terms: ['optim', 'recommend', 'system', 'llm', 'leverag', 'item', 'metadata']
+
+Ranked documents (Log-Likelihood):
+  1. D6   : -∞
+  2. D2   : -∞
+  3. D4   : -∞
+  4. D1   : -∞
+  5. D5   : -∞
+  6. D3   : -∞
+
+--------------------------------------------------------------------------------
+
